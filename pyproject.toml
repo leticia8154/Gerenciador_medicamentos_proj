@@ -1,0 +1,13 @@
+[project]
+name = "gerenciador-medicamentos"
+version = "1.0.0"
+description = "Sistema CLI para auxiliar idosos no controle de medicação"
+authors = [{name = "Letícia Araújo", email = "leticia.araujoa@sempreceub.com"}]
+dependencies = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0"
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
