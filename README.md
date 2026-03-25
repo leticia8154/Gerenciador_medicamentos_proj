@@ -1,6 +1,6 @@
 # Gerenciador de Medicamentos - Melhor Idade
 
-[![CI Pipeline](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions)
+[![CI Pipeline](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions)
 
 **Problema Real:** Muitos idosos possuem dificuldade em gerir múltiplos medicamentos, resultando em doses esquecidas ou duplicadas.
 **Solução:** Uma ferramenta CLI simples para validar e organizar a rotina de medicação.
