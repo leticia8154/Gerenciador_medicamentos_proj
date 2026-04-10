@@ -16,4 +16,4 @@ jobs:
       - name: Lint with Ruff
         run: ruff check .
       - name: Run Tests with Pytest
-        run: python -m pytest
+        run: PYTHONPATH=. python -m pytest
