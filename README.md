@@ -1,9 +1,9 @@
 # Gerenciador de Medicamentos - CicloMedi💊
 
-> **Link Oficial do Deploy:** [https://gerenciador-medicamentos-proj.onrender.com/](https://gerenciador-medicamentos-proj.onrender.com/) 
+>[![CI Pipeline](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions)
 
-[![CI Pipeline](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions)
-
+>  **Link Oficial do Deploy:** [https://gerenciador-medicamentos-proj.onrender.com/](https://gerenciador-medicamentos-proj.onrender.com/)
+> 
 ## 🌟 Problema Real
 Muitos idosos têm dificuldade em gerenciar múltiplos medicamentos, resultando em doses esquecidas ou duplicadas. 
 
