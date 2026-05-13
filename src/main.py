@@ -1,3 +1,6 @@
+from flask import Flask
+app = Flask(__name__)
+
 import requests
 from src.core import validar_medicamento
 
