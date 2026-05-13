@@ -1,37 +1,34 @@
-# src/main.py
 import requests
 from src.core import validar_medicamento
 
 def buscar_cep(cep):
-    """Integração com a API ViaCEP"""
     url = f"https://viacep.com.br/ws/{cep}/json/"
     try:
-        resposta = requests.get(url)
-        dados = resposta.json()
-        if "erro" in dados:
-            return None
-        return f"{dados['logradouro']}, {dados['bairro']} - {dados['localidade']}/{dados['uf']}"
+        response = requests.get(url, timeout=5)
+        dados = response.json()
+        return dados if "erro" not in dados else None
     except:
-        return "Erro na conexão com a API."
+        return None
 
 def principal():
-    print("="*30)
-    print("GERENCIADOR MELHOR IDADE v2.0")
-    print("="*30)
+    print("="*40)
+    print(" GERENCIADOR DE MEDICAMENTOS - MELHOR IDADE ")
+    print("="*40)
     
     nome = input("Nome do Medicamento: ")
     try:
         dose = float(input("Dose (mg): "))
         if validar_medicamento(nome, dose):
-            print(f"✅ {nome} validado!")
+            print(f"✅ Medicamento {nome} validado!")
             
-            # Nova funcionalidade da Etapa Intermediária:
-            op = input("\nDeseja validar CEP para entrega? (s/n): ")
-            if op.lower() == 's':
-                cep = input("Digite o CEP: ")
-                endereco = buscar_cep(cep)
-                print(f"📍 Endereço: {endereco if endereco else 'CEP inválido.'}")
-                
+            print("\n--- Entrega (API ViaCEP) ---")
+            cep = input("Digite seu CEP para entrega: ")
+            endereco = buscar_cep(cep)
+            
+            if endereco:
+                print(f"📍 Endereço localizado: {endereco['logradouro']}, {endereco['localidade']}/{endereco['uf']}")
+            else:
+                print("❌ CEP não encontrado.")
     except ValueError as e:
         print(f"❌ Erro: {e}")
 
