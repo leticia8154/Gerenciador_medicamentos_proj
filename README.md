@@ -29,3 +29,6 @@ Uma aplicação web intuitiva para validar medicamentos e organizar a rotina de 
 1. Clone o repositório: `git clone https://github.com/leticia8154/Instrucoes_medicamentos_proj.git`
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Execute a aplicação: `python src/main.py`
+
+## 📝 Autora
+Letícia Araújo
