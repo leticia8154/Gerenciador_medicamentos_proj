@@ -23,7 +23,7 @@ HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gerenciador Melhor Idade</title>
+    <title>Gerenciador CicloMedi</title>
     <style>
         body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding: 50px; }
         .card { background: white; padding: 30px; border-radius: 12px; shadow: 0 4px 6px rgba(0,0,0,0.1); width: 400px; }
@@ -36,7 +36,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="card">
-        <h1>💊 Gerenciador Melhor Idade</h1>
+        <h1>💊 Gerenciador CicloMedi</h1>
         <p class="status">● Sistema Online</p>
         
         <form method="POST">
