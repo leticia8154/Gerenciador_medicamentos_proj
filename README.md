@@ -1,24 +1,31 @@
-# Gerenciador de Medicamentos - Melhor Idade
+# Gerenciador de Medicamentos - CicloMedi💊
 
-[![CI Pipeline](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Gerenciador_medicamentos_proj/actions)
+> **Link Oficial do Deploy:** [https://gerenciador-medicamentos-proj.onrender.com/](https://gerenciador-medicamentos-proj.onrender.com/)
 
-**Problema Real:** Muitos idosos possuem dificuldade em gerir múltiplos medicamentos, resultando em doses esquecidas ou duplicadas.
-**Solução:** Uma ferramenta CLI simples para validar e organizar a rotina de medicação.
+[![CI Pipeline](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions/workflows/ci.yml/badge.svg)](https://github.com/leticia8154/Instrucoes_medicamentos_proj/actions)
 
-## 🛠️ Tecnologias
-- **Linguagem:** Python 3.10
-- **Qualidade:** Ruff (Linting)
-- **Testes:** Pytest
-- **CI/CD:** GitHub Actions
+## 🌟 Problema Real
+Muitos idosos têm dificuldade em gerenciar múltiplos medicamentos, resultando em doses esquecidas ou duplicadas. 
 
-## 🚀 Como Executar
-1. Instale as dependências: `pip install -r requirements.txt`
-2. Rode a aplicação: `python src/app.py`
+## 🚀 Solução (CicloMedi)
+Uma aplicação web intuitiva para validar medicamentos e organizar a rotina de medicação, integrada com a **API ViaCEP** para logística de entrega e localização de endereços.
 
-## 🧪 Testes e Qualidade
-- Executar testes: `pytest`
-- Executar Lint: `ruff check .`
+## 🛠️ Tecnologias e Ferramentas
+- **Linguagem:** Python 3.11
+- **Framework Web:** Flask
+- **Servidor de Produção:** Gunicorn
+- **Integração:** API Pública ViaCEP (Consumo de dados externos)
+- **Qualidade de Código:** Ruff (Linter) e Pytest (Testes Unitários/Integração)
+- **CI/CD:** GitHub Actions (Automação de testes e análise)
+- **Hospedagem:** Render (Cloud PaaS)
 
-**Versão:** 1.0.0 (SemVer)
+## 📂 Estrutura de Diretórios
+- `src/`: Código-fonte principal da aplicação (Flask + Lógica de Core).
+- `testes/`: Scripts de testes automatizados e integração com API.
+- `.github/workflows/`: Configurações do pipeline de CI/CD.
+- `requirements.txt`: Lista de dependências do projeto.
 
-**Autor:** Letícia Araújo
+## 🔧 Como Executar Localmente
+1. Clone o repositório: `git clone https://github.com/leticia8154/Instrucoes_medicamentos_proj.git`
+2. Instale as dependências: `pip install -r requirements.txt`
+3. Execute a aplicação: `python src/main.py`
