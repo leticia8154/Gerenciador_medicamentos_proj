@@ -12,5 +12,4 @@ dependencies = [
 line-length = 88
 
 [tool.ruff.lint]
-# Isso garante que ele use as regras modernas e pare de dar avisos
 select = ["E", "F", "W"]
